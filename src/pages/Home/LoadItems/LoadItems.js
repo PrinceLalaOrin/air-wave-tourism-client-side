@@ -7,7 +7,7 @@ const LoadItems = () => {
     const[products, setProducts] = useState([])
     // console.log(products)
     useEffect(() =>{
-        fetch('http://localhost:5000/items')
+        fetch('https://guarded-refuge-72039.herokuapp.com/items')
         .then(res => res.json())
         .then(data => setProducts(data))
     }, [])
